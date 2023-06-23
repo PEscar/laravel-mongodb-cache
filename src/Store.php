@@ -60,7 +60,7 @@ class Store implements StoreInterface
         $cacheData = $this->table()->where('key', $this->getKeyWithPrefix($key))->first();
 
         // If it's a rate limit block
-        if ( Str::contains($key, ':timer') ) {
+        if ( str_contains($key, ':timer') ) {
 
             $expiration = $cacheData ? (int) ((string) $cacheData['expiration']) : false;
 
