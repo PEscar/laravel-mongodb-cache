@@ -1,0 +1,38 @@
+{
+    "name": "playlogiq/laravel-mongodb-cache",
+    "description": "A mongodb cache driver for laravel",
+    "type": "library",
+    "version": "5.0.0",
+    "require": {
+        "jenssegers/mongodb": "~3.8",
+        "illuminate/cache": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PEscar",
+            "email": "pedroscarselletta@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "ForFit\\Mongodb\\Cache\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ForFit\\Mongodb\\Cache\\ServiceProvider"
+            ]
+        }
+    }
+}
