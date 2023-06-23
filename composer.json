@@ -1,5 +1,5 @@
 {
-    "name": "playlogiq/laravel-mongodb-cache",
+    "name": "playlogiq/laravel-mongodb-cache-2",
     "description": "A mongodb cache driver for laravel",
     "type": "library",
     "version": "5.0.1",
